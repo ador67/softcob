@@ -16,8 +16,15 @@
    --nav-color:#000;
    --bg-color:#000;
    --text-color:#fff;
+   --p-color:#AFB0B9;
 }
-
+textarea,
+input[type=text]{
+  color: var(--text-color);
+}
+body p{
+  color: var(--p-color);
+}
 body{
   background: var(--body-color);
   transition: background .3s;
@@ -580,5 +587,5 @@ footer{
 
 #dark-mode.dark-mode-on{
   padding-left: 23px;
-  background: black;
+  background: #242428;
 }
