@@ -6,8 +6,21 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+  --body-color:#efefef;
+  --nav-color:#1876f2;
+}
+
+.dark-theam{
+   --body-color:#0a0a0a;
+   --nav-color:#000;
+   --bg-color:#000;
+   --text-color:#fff;
+}
+
 body{
-  background: #efefef;
+  background: var(--body-color);
+  transition: background .3s;
 }
 
 a{
@@ -17,12 +30,14 @@ a{
 ul li{
   list-style-type: none;
 }
+
+
           /*  =============== Nav ============  */
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1876f2;
+  background-color: var(--nav-color);
   padding: 5px 3%;
   position: sticky;
   top: 0;
@@ -95,6 +110,64 @@ nav{
   top: 0;
   right: 0;
 }
+          /*================  SETTING MENU  ========================*/
+.setting-menu{
+  position: absolute;
+  width: 90%;
+  max-width: 300px;
+  background: var(--body-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  top: 108%;
+  right: 1%;
+  opacity: 0;
+  max-height: 0;
+  transition:  0.4s;
+}
+
+.setting-menu-height{
+    opacity: 1;
+    max-height: 400px;
+}
+
+.user-profile a{
+  font-size: 12px;
+  color: #1876f2;
+}
+
+.setting-menu-inside{
+  padding: 20px;
+}
+
+.setting-menu hr{
+  border: 0;
+  height: 1px;
+  background: #9a9a9a;
+  margin: 15px ;
+}
+
+.setting-links{
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.setting-icon{
+  width: 38px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.setting-links a{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  color: #626262;
+}
+
+
                       /*======= container  =========*/
 .container{
   display: flex;
@@ -215,7 +288,7 @@ background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/statu
 
 .write-post-container{
   width: 100%;
-  background-color: white;
+  background-color: var(--bg-color);
   border-radius: 6px;
   padding: 20px;
   color: #626262;
@@ -278,7 +351,7 @@ background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/statu
 
 .post-container{
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
   border-radius: 6px;
   padding: 13px 17px;
   color: #626262;
@@ -359,7 +432,7 @@ background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/statu
           /*  ==================  right-siderber  ===================  */
 
 .right-siderber{
-  background: #fff;
+  background: var(--bg-color);
   border-radius: 4px;
   color: #626262;
   padding: 20px;
@@ -447,4 +520,65 @@ font-size: 12px;
   top: unset;
   bottom: 5px;
   right: 6px;
+}
+          /*=======================   footer  ================*/
+
+footer{
+  text-align: center;
+  color: #9a9a9a;
+  padding: 10px 0 20px;
+  font-size: 13px;
+}
+
+
+          /*  =============== dark-mode ============  */
+
+#dark-mode{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: flex;
+  transition: 0.4s;
+}
+
+#dark-mode span{
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+          /*  =============== dark-mode ============  */
+
+#dark-mode{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 3px 3px;
+  cursor: pointer;
+  display: flex;
+  transition: 0.4s;
+}
+
+#dark-mode span{
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#dark-mode.dark-mode-on{
+  padding-left: 23px;
+  background: black;
 }

@@ -28,9 +28,60 @@
             <img class="search-logo" src="images/search.png"/></label>
           <input type="search" placeholder="Search" name="src" id="src"  />
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingMenuToggle()">
           <img class="nav-user-logo" src="images/profile-pic.png"/>
         </div>
+      </div>
+                      
+              <!--==============  SETTING MENU  ===================== -->   
+      
+      <div class="setting-menu">
+        
+        <div id="dark-mode">
+          <span></span>
+        </div>
+       <div class="setting-menu-inside">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p> Ã D Ør II</p>
+              <a href="#">See Your Profile</a>
+            </div>
+          </div>
+        
+        <hr />
+        
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p> Give Feedback</p>
+              <a href="#">Help us to improve the Socal Site</a>
+            </div>
+          </div>
+          
+          <hr />
+          
+          <div class="setting-links"> 
+            <img src="images/setting.png" class="setting-icon"/>
+            <a href="#">Settings & Perivacy <img src="images/arrow.png" width="10px" /></a>
+          </div>
+         
+         <div class="setting-links">
+           <img src="images/help.png" class="setting-icon" />
+           <a href="#">Help & Support <img src="images/arrow.png" width="10px" /></a>
+         </div>
+         
+         <div class="setting-links">
+           <img src="images/display.png" class="setting-icon" />
+           <a href="#"> Display & Accessbilty <img src="images/arrow.png" width="10px" /></a>
+         </div>
+         
+         <div class="setting-links">
+           <img src="images/logout.png" class="setting-icon" />
+           <a href="#"> Logout<img src="images/arrow.png" width="10px" /></a>
+         </div>
+          
+       </div>
       </div>
     </nav>
     
@@ -89,7 +140,7 @@
             </div>
           </div>
           <div class="post-input-container">
-            <textarea rows="3" placeholder="what's on your mind, Ador?"></textarea>
+            <textarea  rows="3" placeholder="what's on your mind, Ador?"></textarea>
             <div class="add-post-link">
               <a href="#"><img src="images/live-video.png"/> Live</a>
               <a href="#"><img src="images/photo.png"/> Photo/Video</a>
@@ -332,10 +383,12 @@
         </div>
         <p>Arentofin Onni</p>
       </div>
-      
-      
-      </div>
+     </div>
     </div>
     
+    <footer>
+      <p>Copyright 2021 - SocilBook by &copy;ador</p>
+    </footer>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
