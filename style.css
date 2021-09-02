@@ -305,6 +305,11 @@ background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/statu
   margin: 15px 0;
   font-size: 15px;
 }
+.post-dis span{
+  font-weight: 500;
+  font-size: 16px;
+  color: #777;
+}
 .post-dis a{
   color: #1876f2;
 }
@@ -337,6 +342,17 @@ background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/statu
 .activity-icon .love a:hover i {
   color: #D41919;
   transform: scale(1.1);
+}
+
+.Load-More-btn{
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #9a9a9a;
+  color: #626262;
+  background: transparent;
+  border-radius: 4px;
 }
 
 
